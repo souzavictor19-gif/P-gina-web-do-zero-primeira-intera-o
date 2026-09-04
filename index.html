@@ -20,10 +20,12 @@
             margin: 0 auto;
             padding: 16px;
             display: flex;
-        
+            flex-direction: column;
+            gap: 24px;
         }
-        article{
-            
+        article {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 16px;
         }
         img {
             width: 80px;
@@ -40,45 +42,46 @@
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-    </header>
+    </header> 
     
     <main>
         <article>
-        
-        <img src="edu.jpeg" alt="Logo em estilo pixel art em um fundo azul-escuro com a palavra EDU TECH">
-        
-        <h2>Meu primeiro post</h2>
-        <p>Por: Victor Delfino</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área da tecnologia.</p>
-        
-        <button>❤️‍🔥 <span>0</span></button>
-        <button>😊 <span>0</span></button>
-
-         </div>
-         <article>
+            <img src="edu.jpeg" alt="Logo em estilo pixel art em um fundo azul-escuro com a palavra EDU TECH">
+            <h2>Meu primeiro post</h2>
+            <p>Por: Victor Delfino</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área da tecnologia.</p>
+            
+            <button>❤️‍🔥 <span>0</span></button>
+            <button>😊 <span>0</span></button>
         </article>
 
-         </article>
-
-         <img src="edu.jpeg" alt="Logo em estilo pixel art em um fundo azul-escuro com a palavra EDU TECH">
-        
-         <h2>Meu primeiro post</h2>
-         <p>Por: Victor Delfino</p>
-         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área da tecnologia.</p>
-         
-         <button>❤️‍🔥 <span>0</span></button>
-         <button>😊 <span>0</span></button>
- 
-        </div>
+        <article>
+            <img src="edu.jpeg" alt="Logo em estilo pixel art em um fundo azul-escuro com a palavra EDU TECH">
+            <h2>Meu primeiro post</h2>
+            <p>Por: Victor Delfino</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área da tecnologia.</p>
+            
+            <button>❤️‍🔥 <span>0</span></button>
+            <button>😊 <span>0</span></button>
+        </article>
     </main>
 
     <script>
         const botoes = document.querySelectorAll("button");
 
         botoes.forEach(function(botao) {
-            botao.addEventListener("click", function() {
+            let curtiu = false;
+            
+            botao.saddEventListener("click", function() {
                 let texto = botao.querySelector("span");
-                texto.textContent = Number(texto.textContent) + 1;
+                
+                if (curtiu === false) {
+                    texto.textContent = Number(texto.textContent) + 1;
+                    curtiu = true;
+                } else {
+                    texto.textContent = Number(texto.textContent) - 1;
+                    curtiu = false;
+                }
             });
         });
     </script>
