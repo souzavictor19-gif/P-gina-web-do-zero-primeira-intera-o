@@ -72,16 +72,19 @@
         botoes.forEach(function(botao) {
             let curtiu = false;
             
-            botao.saddEventListener("click", function() {
-                let texto = botao.querySelector("span");
-                
-                if (curtiu === false) {
-                    texto.textContent = Number(texto.textContent) + 1;
-                    curtiu = true;
-                } else {
-                    texto.textContent = Number(texto.textContent) - 1;
+            botao.addEventListener("click", function() {
+                let contador = botao.querySelector("span");
+                let quantidade = parseInt(contador.textContent);
+
+                if (curtiu) {
+                    quantidade--;
                     curtiu = false;
+                } else {
+                    quantidade++;
+                    curtiu = true;
                 }
+
+                contador.textContent = quantidade;
             });
         });
     </script>
