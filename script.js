@@ -1,18 +1,34 @@
-const botoes = document.querySelectorAll("button");
+// Lógica dos botões de curtir
+const botoesCurtir = document.querySelectorAll(".btn-curtir");
 
-botoes.forEach(function (botao) {
+botoesCurtir.forEach(function (botao) {
   let curtiu = false;
-  botao.addEventListener("click", botaoclicado);
 
-  function botaoclicado() {
-    console.log("fui clicado");
-    let texto = botao.querySelector("span");
-    if (curtiu === false) {
-      texto.textContent++;
+  botao.addEventListener("click", function () {
+    const contador = botao.querySelector("span");
+    let valorAtual = Number(contador.textContent);
+
+    if (!curtiu) {
+      contador.textContent = valorAtual + 1;
       curtiu = true;
+      botao.classList.add("curtido");
     } else {
-      texto.textContent--;
+      contador.textContent = valorAtual - 1;
       curtiu = false;
+      botao.classList.remove("curtido");
     }
+  });
+});
+
+// Lógica do Modo Escuro
+const botaoTema = document.getElementById("btn-tema");
+
+botaoTema.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    botaoTema.textContent = "☀️ Modo Claro";
+  } else {
+    botaoTema.textContent = "🌙 Modo Escuro";
   }
 });
