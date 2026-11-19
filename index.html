@@ -2,210 +2,105 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-<style>
-:root{
---cor-primaria: #183C63;
---cor-secundaria: #3782d2;
---cor-fundo: #ffffff;
---cor-texto: #151428;
---cor-constraste: #f3eef7;
---cor-botao: #f9f9f9;
-}
-
-body {
-max-width: 100vw;
-}
-
-header {
-background-color: #183C63;
-color: #FFFFFF;
-text-align: center;
-margin: 0 auto;
-padding: 16px;
-
-}
-
-main {
-background-color: #FFFFFF;
-color: #183C63;
-margin: 0 auto;
-padding: 16px;
-
-display: flex;
-flex-wrap: wrap;
-}
-article{
-display: flex;
-
-border: 1px solid #183C63;
-margin: 16px;
-gap: 16px;
-padding: 16px;
-
-flex: 1 1 30%;
-}
-img {
-width: 80px;
-height: 80px;
-}
-
-.artigo-autor {
-font-weight: bold;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog Tech</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-<h1>Meu Blog Tech</h1>
-<p>Vou Compartilhar conhecimentos sobre
-tecnologia e programação</p>
-</header>
-<main>
-<article>
-<img src="tec.joy" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>Meu primeiro post</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou
-compartilhar dicas de programação e curiosidades
-da área de tecnologia.</p>
+  <header>
+    <h1>Meu Blog Tech</h1>
+    <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    <button id="btn-tema">🌙 Modo Escuro</button>
+  </header>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="edu.png" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>Mouse Antigo</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>Antes do design ergonomico e das luzers RGB, o mouse era bem simples e não tinham
-sensores, usavam uma bolinha em baixo do mouse para ele funcionar</p>
+  <main>
+    <article>
+      <img src="tec.joy" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Meu primeiro post</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<p class="artigo-fonte">Fonte:Google</p>
+    <article>
+      <img src="edu.png" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Mouse Antigo</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>Antes do design ergonômico e das luzes RGB, o mouse era bem simples e não tinha sensores; usava uma bolinha embaixo para funcionar.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="tec.money" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>teclado antigo</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>Os teclados antigos, conhecidos pelo visual retrô e pela durabilidade, despertam o interesse de colecionadores e de quem busca uma digitação mais confortável. Seja para restaurar um clássico real ou usar um modelo moderno com estilo vintage, o mercado oferece opções fascinantes.</p>
+    <article>
+      <img src="tec.money" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Teclado Antigo</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>Os teclados antigos, conhecidos pelo visual retrô e pela durabilidade, despertam o interesse de colecionadores e de quem busca uma digitação mais confortável. Seja para restaurar um clássico real ou usar um modelo moderno com estilo vintage, o mercado oferece opções fascinantes.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<p class="artigo-fonte">Fonte:Google</p>
+    <article>
+      <img src="tec.png" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Monitor Antigo</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>Os monitores antigos, marcados pela era das telas pesadas e volumosas, ganharam um status nostálgico e hoje são itens desejados por colecionadores de retrocomputing, entusiastas de jogos antigos (retrogaming) e estúdios de design.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="tec.png" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>Monitor antigo</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>Os monitores antigos, marcados pela era das telas pesadas e volumosas, ganharam um status nostálgico e hoje são itens desejados por colecionadores de retrocomputing, entusiastas de jogos antigos (retrogaming) e estúdios de design.</p>
+    <article>
+      <img src="tec.joy" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Gabinete Antigo</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>Os gabinetes de computador antigos, especialmente os modelos das décadas de 1980 e 1990, tornaram-se itens raros e valiosos no movimento de retrocomputing. Conhecidos pelo visual robusto, chapas de metal grossas e a icônica cor bege, eles representam a era de ouro da computação pessoal.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<p class="artigo-fonte">Fonte:Google</p>
+    <article>
+      <img src="vec.mey" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Câmera Antiga</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>As câmeras antigas carregam o charme da fotografia analógica e mecânica, atraindo tanto colecionadores quanto jovens interessados na estética granulada e nas cores únicas dos filmes fotográficos. O universo das câmeras vintage abrange desde modelos centenários até as primeiras digitais dos anos 2000.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="tec.joy" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>gabinete antigo</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>Os gabinetes de computador antigos, especialmente os modelos das décadas de 1980 e 1990, tornaram-se itens raros e valiosos no movimento de retrocomputing. Conhecidos pelo visual robusto, chapas de metal grossas e a icônica cor bege, eles representam a era de ouro da computação pessoal.</p>
+    <article>
+      <img src="tec.money" alt="Ícone quadrado para blog de tecnologia e educação com um livro aberto, circuitos digitais e uma lâmpada acesa.">
+      <div>
+        <h2>Placa-mãe Antiga</h2>
+        <p class="artigo-autor">Por: Victor</p>
+        <p>As placas-mãe antigas são a espinha dorsal do retrocomputing. Elas carregam a evolução da arquitetura dos computadores e são essenciais para quem deseja reviver a experiência exata de sistemas operacionais como o MS-DOS, Windows 95 ou Windows XP.</p>
+        <p class="artigo-fonte">Fonte: Google</p>
+        <button class="btn-curtir">❤️ <span>0</span></button>
+        <button class="btn-curtir">👍 <span>0</span></button>
+      </div>
+    </article>
+  </main>
 
-<p class="artigo-fonte">Fonte:Google</p>
-
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="vec.mey" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>Camera antiga</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>As câmeras antigas carregam o charme da fotografia analógica e mecânica, atraindo tanto colecionadores quanto jovens interessados na estética granulada e nas cores únicas dos filmes fotográficos. O universo das câmeras vintage abrange desde modelos centenários até as primeiras digitais dos anos 2000.</p>
-
-<p class="artigo-fonte">Fonte:Google</p>
-
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-<article>
-<img src="tec.money" alt="Ícone quadrado para blog de tecnologia e educação.
-No centro, um livro aberto com circuitos digitais integrados
-e uma lâmpada acesa saindo do meio.
-Dentro da lâmpada, há um capelo de formatura e conexões de rede.
-Fundo em gradiente azul e verde.">
-<div>
-<h2>placa mãe antiga</h2>
-<p class="artigo-autor"> Por: victor</p>
-<p>As placas-mãe antigas são a espinha dorsal do retrocomputing. Elas carregam a evolução da arquitetura dos computadores e são essenciais para quem deseja reviver a experiência exata de sistemas operacionais como o MS-DOS, Windows 95 ou Windows XP.</p>
-
-<p class="artigo-fonte">Fonte:Google</p>
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-</main>
+  <script src="script.js"></script>
 </body>
-<script>
-const botoes = document.querySelectorAll("button");
-
-botoes.forEach(function (botao) {
-let curtiu = false;
-botao.addEventListener("click", botaoclicado);
-function botaoclicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-if (curtiu === false){
-texto.textContent++;
-curtiu = true;
-}else{
-texto.textContent--;
-curtiu = false;
-}
-}
-})
-
-</script>
 
 </html>
